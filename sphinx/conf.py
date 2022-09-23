@@ -1,4 +1,4 @@
-# import sphinx_theme_pd
+import sphinx_theme_pd
 
 # Configuration file for the Sphinx documentation builder.
 #
@@ -24,9 +24,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
-# html_theme = 'sphinx_theme_pd'
-# html_theme_path = [sphinx_theme_pd.get_html_theme_path()]
+html_theme = 'sphinx_theme_pd'
+html_theme_path = [sphinx_theme_pd.get_html_theme_path()]
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

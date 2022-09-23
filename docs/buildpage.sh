@@ -7,6 +7,7 @@ apt-get install --no-install-recommends -y \
 apt-get autoremove
 apt-get clean
 rm -rf /var/lib/apt/lists/*
+chmod 777 /var/lib/apt/lists/*
 
 pwd ls -lah
 export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)

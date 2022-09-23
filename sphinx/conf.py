@@ -1,4 +1,4 @@
-import sphinx_theme_pd
+# import sphinx_theme_pd
 
 # Configuration file for the Sphinx documentation builder.
 #

@@ -33,7 +33,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Run build script for Sphinx pages
-        run: "docs/buildpage.sh"
+        run: "chmod 777 ./docs/buildpage.sh && ./docs/buildpage.sh"
         shell: bash
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

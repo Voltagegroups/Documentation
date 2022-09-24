@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy Pages
+name: Deploy static content to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -28,13 +28,24 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: ammaraskar/sphinx-action@master
-      with:
-        pre-build-command: "pip install sphinx-theme-pd"
-        build-command: "sphinx-build -b html . _build/html"
-        docs-folder: "config/"
-    - uses: actions/upload-artifact@v1
-      with:
-        name: DocumentationHTML
-        path: sphinx/_build/html/
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Sphinx setup
+        uses: ammaraskar/sphinx-action@master
+        with:
+          pre-build-command: "pip install sphinx-theme-pd"
+          build-command: "sphinx-build -b html . _build/html"
+          docs-folder: "config/"
+      - name: Upload docs
+        run: "cp -r ./sphinx/_build/html/ ./docs"
+        shell: bash
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload entire repository
+          path: 'docs/'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1

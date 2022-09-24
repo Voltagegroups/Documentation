@@ -8,7 +8,7 @@ import sphinx_theme_pd
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'documentation'
+project = 'VoltageGroup\'s'
 copyright = '2022, Virvolta'
 author = 'Virvolta'
 release = '0.0.1'

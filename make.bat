@@ -7,8 +7,8 @@ REM Command file for Sphinx documentation
 if "%SPHINXBUILD%" == "" (
 	set SPHINXBUILD=C:\Users\VirVo\AppData\Local\Programs\Python\Python39\Scripts\sphinx-build.exe
 )
-set SOURCEDIR=.
-set BUILDDIR=_build
+set SOURCEDIR=config/
+set BUILDDIR=docs/
 
 %SPHINXBUILD% >NUL 2>NUL
 if errorlevel 9009 (

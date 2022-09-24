@@ -33,7 +33,7 @@ jobs:
       with:
         pre-build-command: "pip install sphinx-theme-pd"
         build-command: "sphinx-build -b html . _build/html"
-        docs-folder: "sphinx/"
+        docs-folder: "config/"
     - uses: actions/upload-artifact@v1
       with:
         name: DocumentationHTML

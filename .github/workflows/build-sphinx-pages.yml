@@ -39,7 +39,7 @@ jobs:
           build-command: "sphinx-build -b html . _build/html"
           docs-folder: "config/"
       - name: Upload docs
-        run: "cp -r ./sphinx/_build/html/ ./docs"
+        run: "cp -r ./config/_build/html/ ./docs"
         shell: bash
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

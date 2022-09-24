@@ -1,6 +1,10 @@
-Welcome to documentation's documentation!
+.. image:: images/title.png
+  :width: 400
+  :alt: Alternative text
+
+About
 =========================================
-This repo shows an example of how to use GitHub Pages with Python Sphinx builds.
+Documentation of the voltage group's.
 
 .. toctree::
    :maxdepth: 2

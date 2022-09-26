@@ -136,9 +136,6 @@ Admonition
 .. note:: This is a note admonition.
    This is the second line of the first paragraph.
 
-.. admonition:: This is a general admonition.
-   This is the second line of the first paragraph.
-
 
 Indices and tables
 ==================

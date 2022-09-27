@@ -1,5 +1,5 @@
 .. image:: images/title.png
-  :width: 300px
+  :width: 150px
   :alt: Title
   :align: center
 

@@ -10,11 +10,17 @@
 - [Documentation](https://voltagegroups.github.io/Documentation/index.html)
 - [Faq](#FAQ)
 - [Features](#features)
+- [Contents](#contents)
 - [Community](#community)
 
 ## FAQ
 
 ## Features
+
+## Contents
+
+- [License](./EUPL.md)
+- [Team](https://github.com/orgs/Voltagegroups/teams)
 
 ## Community
 
